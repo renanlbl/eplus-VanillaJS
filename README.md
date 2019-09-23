@@ -20,6 +20,7 @@
 
 Nesse repositório, já existem os arquivos compilados, ou seja, já está pronto para uso, é só abrir o `index.html` dentro da pasta **/src**.
 Mas caso precisem compilar,
+``Primeiro instalar as dependências... yarn install ou npm install``
 
 - Compila na raiz do projeto o SCSS, que irá ficar dentro da pasta /src/scss/
 

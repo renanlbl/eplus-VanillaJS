@@ -22,7 +22,7 @@ gulp.task("scss", function() {
 
 gulp.task("buildjs", function() {
   gulp
-    .src("./src/js/prod/*.js")
+    .src("./src/js/dev/*.js")
     .pipe(
       babel({
         presets: ["@babel/env"]

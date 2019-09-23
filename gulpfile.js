@@ -3,6 +3,7 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var autoprefixer = require("gulp-autoprefixer");
+const babel = require("gulp-babel");
 
 sass.compiler = require("node-sass");
 
@@ -17,6 +18,17 @@ gulp.task("scss", function() {
       })
     )
     .pipe(gulp.dest("./src/css"));
+});
+
+gulp.task("buildjs", function() {
+  gulp
+    .src("./src/js/prod/*.js")
+    .pipe(
+      babel({
+        presets: ["@babel/env"]
+      })
+    )
+    .pipe(gulp.dest("./src/js/dist"));
 });
 
 gulp.task("watch", function() {

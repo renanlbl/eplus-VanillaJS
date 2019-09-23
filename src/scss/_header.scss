@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+
+  &__logo {
+    max-width: 300px;
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  &__navigation {
+    ul {
+      display: flex;
+
+      li {
+        margin: 0 10px;
+      }
+
+      a {
+        color: #000;
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  &__menu {
+    max-width: 300px;
+
+    a {
+      color: #000;
+    }
+
+    i {
+      font-size: 2em;
+      margin: 0 20px;
+    }
+  }
+}

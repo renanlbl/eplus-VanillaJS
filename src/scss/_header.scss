@@ -5,8 +5,15 @@
   justify-content: space-between;
   box-shadow: 0 2px 7px -2px #ccc;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: row-reverse;
+  }
+
   &__logo {
     max-width: 300px;
+    @media screen and (max-width: 768px) {
+      max-width: 150px;
+    }
     img {
       max-width: 100%;
       display: block;
@@ -14,6 +21,34 @@
   }
 
   &__navigation {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    &--mobile {
+      display: none;
+      @media screen and (max-width: 768px) {
+        display: block;
+        z-index: 1;
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        left: -200px;
+        top: 0;
+        background: rgba(0, 0, 0, 0.7);
+        ul {
+          padding: 20px 0;
+          text-align: center;
+          li {
+            margin: 30px 0;
+
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
     ul {
       display: flex;
 
@@ -32,6 +67,28 @@
     max-width: 300px;
     position: relative;
 
+    .nav_buttons {
+      display: flex;
+
+      #button-menu {
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: row-reverse;
+        #button-menu {
+          display: block;
+        }
+      }
+    }
+
+    #menu {
+      display: none;
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+
     a {
       color: #000;
     }
@@ -39,6 +96,10 @@
     i {
       font-size: 2em;
       margin: 0 20px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.4em;
+      }
     }
 
     .arrow {
@@ -51,6 +112,10 @@
       border-left: 18px solid transparent;
       border-right: 18px solid transparent;
       border-bottom: 18px solid #f0f0f0;
+
+      @media screen and (max-width: 768px) {
+        left: 75px;
+      }
     }
 
     &__cart {
@@ -63,6 +128,9 @@
       padding: 10px 10px;
       top: 56px;
       background: #f0f0f0;
+      @media screen and (max-width: 768px) {
+        left: 0;
+      }
 
       .total {
         padding: 15px 0;

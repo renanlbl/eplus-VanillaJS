@@ -8,6 +8,23 @@
   display: flex !important;
 }
 
+.open_menu {
+  animation: open_menu 1s;
+  animation-fill-mode: forwards;
+  display: block;
+}
+
+.open_menu_button {
+  z-index: 10;
+  color: #fff !important;
+}
+
+@keyframes open_menu {
+  100% {
+    left: 0;
+  }
+}
+
 .openBlock {
   display: block !important;
 }

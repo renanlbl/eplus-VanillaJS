@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.open {
+  display: flex !important;
+}
+
+.openBlock {
+  display: block !important;
+}
+
 html,
 body {
   height: 100%;

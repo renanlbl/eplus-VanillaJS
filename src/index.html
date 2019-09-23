@@ -32,24 +32,38 @@
         </ul>
       </nav>
       <div class="header__menu">
-        <a href="">
-          <i class="material-icons">
-            search
-          </i>
-        </a>
-        <a href="">
-          <i class="material-icons">
-            person
-          </i>
-        </a>
-        <a href="">
-          <i class="material-icons">
-            shopping_cart
-          </i>
-        </a>
-      </div>
+        <nav>
+          <a href="">
+            <i class="material-icons">
+              search
+            </i>
+          </a>
+          <a href="">
+            <i class="material-icons">
+              person
+            </i>
+          </a>
+          <a id="cart" href="">
+            <i class="material-icons">
+              shopping_cart
+            </i>
+          </a>
+        </nav>
+        <span id="arrow" class="arrow"></span>
+        <div id="menu_cart" class="header__menu__cart">
+          <div id="products__list" class="products__list">
+          
+          </div>
+          <div class="checkout">
+              <div class="total">Total do pedido: <b id="total__price"></b></div>
+              <div class="buy">finalizar compra</div>
+            </div>     
+          </div>
+        </div>
+        
+      </div> 
     </header>
-    <section class="main"></section>
-    <footer></footer>
+    <section class="main"></section>    
+    <script src="js/cart.js"></script>
   </body>
 </html>

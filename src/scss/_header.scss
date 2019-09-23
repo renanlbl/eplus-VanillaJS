@@ -3,6 +3,7 @@
   align-items: center;
   padding: 10px;
   justify-content: space-between;
+  box-shadow: 0 2px 7px -2px #ccc;
 
   &__logo {
     max-width: 300px;
@@ -29,6 +30,7 @@
 
   &__menu {
     max-width: 300px;
+    position: relative;
 
     a {
       color: #000;
@@ -37,6 +39,86 @@
     i {
       font-size: 2em;
       margin: 0 20px;
+    }
+
+    .arrow {
+      display: none;
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: 18px;
+      top: 41px;
+      border-left: 18px solid transparent;
+      border-right: 18px solid transparent;
+      border-bottom: 18px solid #f0f0f0;
+    }
+
+    &__cart {
+      display: none;
+      flex-direction: column;
+      max-width: 100%;
+      position: absolute;
+      right: 0;
+      min-width: 340px;
+      padding: 10px 10px;
+      top: 56px;
+      background: #f0f0f0;
+
+      .total {
+        padding: 15px 0;
+        text-align: center;
+      }
+
+      .buy {
+        padding: 15px 0;
+        background: #00bc0e;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .products__list {
+        max-height: 400px;
+        overflow-y: scroll;
+      }
+
+      &__products {
+        display: flex;
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        .products__description {
+          text-align: left;
+          margin: 0 auto;
+
+          &__name {
+            max-width: 155px;
+            font-size: 13px;
+            margin-bottom: 10px;
+          }
+
+          &__qnt {
+            font-size: 14px;
+            margin-right: 10px;
+            font-weight: bold;
+          }
+
+          &__value {
+            font-size: 14px;
+            color: #00bc0e;
+            font-weight: bold;
+          }
+        }
+        img {
+          max-width: 80px;
+        }
+      }
     }
   }
 }

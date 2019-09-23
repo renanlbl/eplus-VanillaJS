@@ -1,0 +1,32 @@
+[
+  {
+    "img": "https://images.samsung.com/is/image/samsung/br-notebook-expert-x50-np350xaa-xf3br-np350xaa-xf3br-frontovergray-108088930?$PD_GALLERY_L_JPG$",
+    "name": "Notebook Samsung",
+    "qnt": "1",
+    "price": "2999.99"
+  },
+  {
+    "img": "https://media.gazetadopovo.com.br/2018/08/fa2d1a166933e4702300e8827d87baf9-gpMedium.jpg",
+    "name": "MacBook Air",
+    "qnt": "1",
+    "price": "5999.99"
+  },
+  {
+    "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTCC3FzKJpbA7InIQac6vn4Zy39i6uPzjxapUhJf1Jeu-JjGWUvZhFeloID3GXEb_Uf6BbHu653w9ogaPsVUTCjb9U0hMKFlzbhVKu4HBX-VsivFGBV_6kq&usqp=CAc",
+    "name": "Dell Notebook",
+    "qnt": "1",
+    "price": "1000.99"
+  },
+  {
+    "img": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQkMAaTHl7wFbqs36F9Hs-ig-peEWuUYkX45cpNaCprSVPXUmWTd5HWWuACbbITSvN1TdrrLzbHev1BQ0i7ULZtC-5Hg-o600_S8lSlQu8b&usqp=CAc",
+    "name": "Dell Rosa",
+    "qnt": "1",
+    "price": "1459.99"
+  },
+  {
+    "img": "https://images.lojaiplace.com.br/imagens/large/macbook-pro-15-cinza-espacial-1_z_large.jpg?ims=300x300",
+    "name": "Apple Pro",
+    "qnt": "1",
+    "price": "12000.54"
+  }
+]

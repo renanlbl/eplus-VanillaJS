@@ -2,6 +2,7 @@
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
+var autoprefixer = require("gulp-autoprefixer");
 
 sass.compiler = require("node-sass");
 
@@ -10,6 +11,11 @@ gulp.task("scss", function() {
     .src("./src/scss/*.scss")
     .pipe(sass().on("error", sass.logError))
     .pipe(sass({ outputStyle: "compressed" }))
+    .pipe(
+      autoprefixer({
+        cascade: false
+      })
+    )
     .pipe(gulp.dest("./src/css"));
 });
 
